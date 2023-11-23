@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+    <section class="textos-header" id="inicio">
+        <main id="hero">
+            <div class="promo">
+                <div class="promo1">
+                <h1>PLAZA DE MUNICIPIO DE UNCIA CAPITAL FOLKLORE DE POTOSÍ</h1>
+                <h3> Fomentando y promoviendo el orgullo de la Cultura de Norte Potosi</h3><br>
+                <button type="button" ><a href="foto.html">Comienza</a></button>
+                </div>
+            </div>
+            <video id="video" muted autoplay loop>
+                <source src="https://cdn.glitch.global/bfabbb42-3b9a-4100-b838-8c3dc9d93851/uncia.mp4?v=1700679222247" type="video/mp4">
+            </video> 
+            <div class="capa"></div>
+        </main>
+    </section>
+</header>
+    <script>
+        function cargar_paginahtml(pagina_html,seccion_div)
+        {
+         // Utiliza fetch para obtener el contenido de div.html
+        fetch(pagina_html)
+            .then(response => response.text())
+            .then(data => {
+              // Inserta el contenido en el cuerpo del documento
+              //document.body.innerHTML = data;
+            document.getElementById(seccion_div).innerHTML = data;  
+            })
+            .catch(error => console.error('Error:', error)); 
+        }
+        window.onload = function() 
+        {
+          //cargamos bienvenido
+         // cargar_paginahtml("museo.html","3d");                                          
+        }
+</script>
+<script type="module" src="modelo.js"> </script>
+</body>
+</html>

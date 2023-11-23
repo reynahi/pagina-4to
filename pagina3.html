@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>3D</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="pagina3.css">
+    </head>
+    <body>
+        <canvas class="webgl"> </canvas>
+        <header>
+            <nav>
+                <ul>
+                    <a href="index.html">Inicio</a>
+                <a href="foto.html">Acerca de</a>
+                <a href="pagina3.html">Diseño 3D</a>
+                <a href="circulo.html">fotografia 360</a>
+                <a href="informacion.html">informacion</a>
+                </ul>
+            </nav>
+        </header>
+    <script>
+            function cargar_paginahtml(pagina_html,seccion_div)
+            {
+             // Utiliza fetch para obtener el contenido de div.html
+            fetch(pagina_html)
+                .then(response => response.text())
+                .then(data => {
+                  // Inserta el contenido en el cuerpo del documento
+                  //document.body.innerHTML = data;
+                document.getElementById(seccion_div).innerHTML = data;  
+                })
+                .catch(error => console.error('Error:', error)); 
+            }
+            window.onload = function() 
+            {
+              //cargamos bienvenido
+             // cargar_paginahtml("museo.html","3d");                                          
+            }
+    </script>
+    <script type="module" src="modelo.js"> </script>
+    </body>
+</html>

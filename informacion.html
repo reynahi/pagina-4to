@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Galeria</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="informacion.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <a href="index.html">Inicio</a>
+                <a href="foto.html">Acerca de</a>
+                <a href="pagina3.html">Diseño 3D</a>
+                <a href="circulo.html">Fotografias 360</a>
+                <a href="informacion.html">informacion</a>
+                </ul>
+            </nav>
+
+        </header>
+        <main>
+            <article>
+                <div class="efecto">
+                    <div class="overlay">
+                        <div class="overlay-inner">
+                            <section class="clientes contenedor" id="infor">
+                                <h2 class="titulo">INFORMATE MAS DEL MUNICIPIO DE UNCIA</h2>
+                                <div class="cards">
+                                    <div class="card">
+                                        <img src="https://cdn.glitch.global/bfabbb42-3b9a-4100-b838-8c3dc9d93851/mas.jpg?v=1692298982991" alt="">
+                                        <div class="contenido-texto-card">
+                                            <h4>MASACRE DE UNCIA</h4>
+                                            <p>Esto produjo que el mayor del ejército Ayoroa diera la orden al “Batallón Técnico” de abrir 
+                                                fuego contra los manifestantes, pero en un hecho llamativo los soldados se negaron a reprimir a 
+                                                los trabajadores, lo que enfureció aun más al mayor Ayoroa, decidiendo este tomar una ametralladora y arremeter
+                                                contra los obreros asesinado a cuatro obreros e hiriendo a otros doce de los cuales tres morirían en
+                                                los días sucesivos (estos son los datos oficiales, ya que, según el relato de algunos sobrevivientes,
+                                                fueron mucho más que cuatro los cuerpos que quedaron desangrados en la plaza, y que luego desaparecieron),
+                                                este fue el comienzo de la persecución y asesinato de los obreros. En medio de la plaza poblada de muertos y 
+                                                heridos se escucha el grito de una mujer, Aurelia de Tapia Leiza, quién fue callada por los fusiles, para luego caer herida</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="https://cdn.glitch.global/bfabbb42-3b9a-4100-b838-8c3dc9d93851/obre.jpg?v=1692298990776" alt="">
+                                        <div class="contenido-texto-card">
+                                            <h4>SECUESTRO DE LOS MINEROS OBREROS</h4>
+                                            <p>5 de junio, unos 6000 obreros de las regiones vecinas se sumaron a la huelga, que duraría hasta el día 9,
+                                                cuando, Hernando Siles, delegado del gobierno, y el sacerdote franciscano Fernando González, recomendaron a los obreros aceptar 
+                                                las propuestas para nada convenientes que ofreció el gobierno juntamente a las empresas mineras
+                                                Rivera, junto a Albarracín y Camacho, fueron puestos en un tren rumbo a la ciudad de Oruro,
+                                                pero faltando algunos kilómetros para llegar a esta ciudad fueron bajados y desviados a la ciudad de
+                                                Corque donde se cree que permanecieron encarcelados hasta fines de noviembre de 1923. Ernesto  Fernández
+                                                fue apresado y enviado a la ciudad de Puerto Acosta, donde se desconoce que es lo que sucedió con él.
+                                                Maldonado logro escapar a la Argentina,
+                                                donde siguió comprometido en la lucha obrera en las provincias de Norte Argentino.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+    <script>
+            function cargar_paginahtml(pagina_html,seccion_div)
+            {
+             // Utiliza fetch para obtener el contenido de div.html
+            fetch(pagina_html)
+                .then(response => response.text())
+                .then(data => {
+                  // Inserta el contenido en el cuerpo del documento
+                  //document.body.innerHTML = data;
+                document.getElementById(seccion_div).innerHTML = data;  
+                })
+                .catch(error => console.error('Error:', error)); 
+            }
+            window.onload = function() 
+            {
+              //cargamos bienvenido
+             // cargar_paginahtml("museo.html","3d");                                          
+            }
+    </script>
+    <script type="module" src="modelo.js"> </script>
+    </body>
+</html>

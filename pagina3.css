@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    box-sizing: border-box;
+    height: 50%;
+    width: 50%;
+    font-family: 'Courier New', Courier, monospace;
+    background: #bdc3c7;  /* fallback for old browsers */
+    background:linear-gradient(to right, hsla(255, 92%, 10%, 0.697), hsla(300, 82%, 36%, 0.621)), url(https://cdn.glitch.global/bfabbb42-3b9a-4100-b838-8c3dc9d93851/fuente.jpg?v=1692298972367);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+header {
+    background-color: #77a7ec;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #cadf7f6c;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: right;
+    padding: 20px 50px 0 0;
+    }
+
+ul a{
+    color:white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3em;
+}
+
+ul > a:hover{
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+}
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }   
+    body{
+        background-position: center;
+    }  
+}
