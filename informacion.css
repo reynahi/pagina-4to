@@ -6,6 +6,15 @@
 }
 body {
     font-family: 'cambria';
+    display: grid;
+    place-content: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom right,#64aabb 0%, #3787a4 20%,
+    #288a9b 40%, #70fee9 60%, #73c1f9 80%);
+    background-size: 200% 200%;
+    animation: movimiento .5s linear infinite alternate;
 }
 .contenedor {
     padding: 60px 0;
@@ -47,16 +56,7 @@ ul > a:hover{
     color: #135e9f;
     font-size: 2em;
 }
-header .textos-header{
-    display: flex;
-    height: 430px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 50px;
-}
+
 .textos-header h1{
     font-size: 2em;
     color:#ecbdbd;
@@ -91,8 +91,8 @@ header .textos-header{
     justify-content: center; 
 }
 .pag{
-color:yellow; 
-  background-color: skyblue;
+    color:yellow; 
+    background-color: skyblue;
 }
 .textos-header h2{
     color: #fff;
@@ -107,9 +107,6 @@ color:yellow;
     width: 100%;
 }
 /* About us */
-main{
-    background-color: #695b27;
-}
 main .sobre-nosotros{
     padding: 30px 0 60px 0;
 }

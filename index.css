@@ -51,11 +51,11 @@ video{
 }
 h1{
     color: rgb(20, 44, 32);
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 10 0 20px 0;
 }
 h3{
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bold;
     color:rgb(23, 83, 92);
 }
@@ -77,12 +77,21 @@ background: -webkit-gradient(linear, 0 0, 0 100%, from(#035ee8), to(#9da9c7));
 background: -moz-linear-gradient(top, #035ee8, #9da9c7);
 }
 button:hover {
-    background: -webkit-gradient(linear, 0 0, 0 100%, from( #63041f), to(#e6e7bf));
-    background: -webkit-linear-gradient(top, #e80344, #c6c79d);
-    font-size: 1em;
+    border-color: green;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from( #046063), to(#bfe7df));
+    background: -webkit-linear-gradient(top, #4fe803, #a3c79d);
+    font-size: 2.4em;
     }
 button a{
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
+}
+@media(max-width:952px){
+    h1{
+        font-size: 1em;
+    }
+    h3{
+        font-size: 1em;
+    }
 }

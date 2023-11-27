@@ -19,6 +19,60 @@ body {
     background-size: 200% 200%;
     animation: movimiento 5s linear infinite alternate;
 }
+
+/* Clients */
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card1{
+    background-color: #2e74ba99;
+    display: flex;
+    width: 50%;
+    height: 400px;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+    font-size: 0.9em;
+}
+.card1 h1{
+    color: yellow;
+    font-size: 2em;
+}
+.cards .card1 > .contenido-texto-card{
+    width: 60%;
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+.cards .card1 > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+/*  Our team */
+.about-services{
+    background: #ee7b51;
+    padding-bottom: 30px;
+}
+.servicio-cont{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 48%;
+    height: 50;
+
+}
+.servicio-ind{
+    width: 50%;
+    text-align: center;
+}
+.servicio-in{
+    width: 50%;
+    padding-left: 300px;;
+}
+
+
 @keyframes movimiento {
     from{
         background-position: 0 0;
@@ -28,6 +82,106 @@ body {
     
 }
 
+.fuente{
+    display: flex;
+    justify-content: space-evenly;
+    position:absolute;
+    top:1550px;
+    left: 180px;    
+}
+
+.fuente .fuente1{
+    background-color: #ba722e99;
+    display: flex;
+    width: 80%;
+    height: 200px;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+    font-size: 0.8em;
+}
+.fuente1 h1{
+    color: rgb(195, 255, 0);
+    font-size: 2em;
+}
+.fuente .fuente1 > .contenido-texto-fuente{
+    width: 60%;
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+.fuente .fuente1 > .contenido-texto-fuente p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+/* monumento */
+.monu{
+    display: flex;
+    justify-content: space-evenly;
+    position:absolute;
+    top:1600px;
+    right: 200px;   
+}
+
+.monu .monu1{
+    background-color: #2eba2e99;
+    display: flex;
+    width: 70%;
+    height: 200px;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+    font-size: 0.9em;
+}
+.monu1 h1{
+    color: yellow;
+    font-size: 1.5em;
+}
+.monu .monu1 > .contenido-texto-monu{
+    width: 60%;
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+.monu .monu1 > .contenido-texto-monu p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+/* caseta */
+.casa{
+    display: flex;
+    justify-content: space-evenly;
+    position:absolute;
+    top:1850px;
+    left: 400px;   
+}
+
+.casa .casa1{
+    background-color: #2e74ba99;
+    display: flex;
+    width: 50%;
+    height: 200px;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
+    font-size: 0.9em;
+}
+.casa1 h1{
+    color: rgb(0, 251, 255);
+    font-size: 1em;
+}
+.casa .casa1 > .contenido-texto-casa{
+    width: 60%;
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+.casa .casa1 > .contenido-texto-casa p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/**************************************/
 .contenedor {
     padding: 60px 0;
     width: 90%;
@@ -115,6 +269,14 @@ li a.active, li a:hover{
     #check:checked ~ ul{
         left: 0;
     }
+    .cards .card1 > .contenido-texto-card p{
+        font-size: 0.63em;
+    }
+    .card1 h1{
+        color: yellow;
+        font-size: 1em;
+    }
+
 }
 .titulo {
     color: #0c0648;
@@ -124,13 +286,9 @@ li a.active, li a:hover{
 }
 
 .textos-header{
-    display: flex;
+    float: left;
     height: 430px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+    width: 80%;
     padding: 30px 0 60px 0;
 }
 .textos-header h1{
@@ -241,5 +399,41 @@ main .sobre-nosotros{
 
     .imagen-about-us{
         width: 90%;
+    }
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .cards .card:first-child{
+        margin-bottom: 80px;
+    }
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 80%;
+    }
+
+    .imagen-about-us{
+        width: 90%;
+    }
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
     }
 }

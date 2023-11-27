@@ -86,9 +86,7 @@ push_point_light("#FDFEFE", 1, 10, 9, -6);
 push_point_light("#FDFEFE", 1, -130, -855, -613);
 push_point_light("#FDFEFE", 1, 220, 990, -790);
 push_point_light("#FDFEFE",1, 213, 910, 700);
-push_modelGLB_not_animed("https://cdn.glitch.global/bfabbb42-3b9a-4100-b838-8c3dc9d93851/conjunto.glb?v=1700682771488",1.4,-3,0,1,1.2,1,0,-170,0);
-push_modelGLB_not_animed("https://cdn.glitch.global/bfabbb42-3b9a-4100-b838-8c3dc9d93851/casa1.glb?v=1700755676783",-8,-5,3,1,1.2,1,0,-170,0);
-push_modelGLB_not_animed("https://cdn.glitch.global/bfabbb42-3b9a-4100-b838-8c3dc9d93851/fuente1.glb?v=1700953408914",-10,2,-4,1,1.2,1,0,-170,0);
+push_modelGLB_not_animed("https://cdn.glitch.global/bfabbb42-3b9a-4100-b838-8c3dc9d93851/iglesia1.glb?v=1701083405430",1.4,-2,0,2,2.2,2,0,-170,0);
 }
 function animate() {
   requestAnimationFrame(animate);

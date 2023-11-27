@@ -7,6 +7,11 @@
         <link rel="stylesheet" href="foto.css">
     </head>
     <body>
+        <section>
+            <header>
+                <canvas class="webgl"> </canvas>
+            </header>
+        </section>
             <nav>
                 <input type="checkbox" name="check" id="check">
                 <label for="check" class="checkbtn">
@@ -14,25 +19,28 @@
                 </label>
                 <a href=""></a>
                 <ul>
-                <li><a class="aactive" href="index.html">Inicio</a></li> 
-                <li><a href="foto.html">Acerca de</a></li>
+                <li><a class="active" href="index.html">Inicio</a></li> 
                 <li><a href="pagina3.html">Diseño 3D</a></li>
                 <li><a href="circulo.html">fotografia 360</a></li>
                 <li><a href="informacion.html">informacion</a></li>
                 </ul>
             </nav>
-            
         <main>
-            <section class="textos-header" id="inicio">
-                <h1>HISTORIA DE UNCIA</h1><br>
-                <p>El 1 de mayo de 1923, en Uncía, capital de la Provincia de Bustillo, perteneciente al departamento de Potosí,
-                    no sólo se conmemoró el recuerdo de “Los mártires de Chicago”, sino que también se fundo la “Federación Obrera 
-                    Central de Uncía” (FOCU), con el objetivo de organizar <br> la resistencia cansados de la explotación de las compañías 
-                    estañíferas “La Salvadora” y “Estañifera Llallagua”, promover la solidaridad y el compañerismo entre los obreros, 
-                    como así también lograr una mejor remuneración y mejores condiciones de trabajo. Los ideólogos en la conformación 
-                    de la federación y principales dirigentes fueron: 
-                    Guillermo Gamarra, Gumercindo Rivera, Manuel Herrera, Marcial Arana y Ernesto Fernández</p>
-    
+            <section class="clientes contenedor" id="infor">
+                <div class="cards">
+                    <div class="card1">
+                        <div class="contenido-texto-card">
+                            <h1>HISTORIA DE UNCIA</h1><br>
+                            <p>El 1 de mayo de 1923, en Uncía, capital de la Provincia de Bustillo, perteneciente al departamento de Potosí,
+                                no sólo se conmemoró el recuerdo de “Los mártires de Chicago”, sino que también se fundo la “Federación Obrera 
+                                Central de Uncía” (FOCU), con el objetivo de organizar <br> la resistencia cansados de la explotación de las compañías 
+                                estañíferas “La Salvadora” y “Estañifera Llallagua”, promover la solidaridad y el compañerismo entre los obreros, 
+                                como así también lograr una mejor remuneración y mejores condiciones de trabajo. Los ideólogos en la conformación 
+                                de la federación y principales dirigentes fueron: 
+                                Guillermo Gamarra, Gumercindo Rivera, Manuel Herrera, Marcial Arana y Ernesto Fernández</p>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section class="contenedor sobre-nosotros" id="acerca">
                 <h2 class="titulo">NUESTRA CULTURA</h2>
@@ -59,5 +67,55 @@
                 </div>
             </section>
         </main>
+
+        <div class="fuente">
+            <div class="fuente1">
+                <div class="contenido-texto-fuente">
+                    <h1>FUENTE</h1><br>
+                    <p>Esta construido de piedra.</p>
+                    <p>Fluye el agua de la fuente</p>
+                    <p>Esta ubicado en el medio de la plaza</p>
+                </div>
+            </div>
+        </div>
+        <div class="monu">
+            <div class="monu1">
+                <div class="contenido-texto-monu">
+                    <h1>MONUMENTO FOLKORICO DE LA PLAZA DE UNCIA</h1><br>
+                    <p>Este monumento contiene una montera, la gritarra y el pututu<br> 
+                    Que antes se usaba estos instrumentos para las fiestas y para una organización en conjunto</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="casa">
+            <div class="casa1">
+                <div class="contenido-texto-casa">
+                    <h1>CASETA DE LA PLAZA DE UNCIA</h1><br>
+                    <p>Esta caseta es muy habitable para los visitantes donde pueden observar la plaza, la iglesia<br> 
+                    También comparten en familia, amigos.</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            function cargar_paginahtml(pagina_html,seccion_div)
+            {
+             // Utiliza fetch para obtener el contenido de div.html
+            fetch(pagina_html)
+                .then(response => response.text())
+                .then(data => {
+                  // Inserta el contenido en el cuerpo del documento
+                  //document.body.innerHTML = data;
+                document.getElementById(seccion_div).innerHTML = data;  
+                })
+                .catch(error => console.error('Error:', error)); 
+            }
+            window.onload = function() 
+            {
+              //cargamos bienvenido
+             // cargar_paginahtml("museo.html","3d");                                          
+            }
+    </script>
+    <script type="module" src="mode.js"> </script>
     </body>
 </html>
