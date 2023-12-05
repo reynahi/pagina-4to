@@ -3,14 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none;
     box-sizing: border-box;
 }
 body {
     box-sizing: border-box;
     height: 50%;
     width: 50%;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
     background: #bdc3c7;  /* fallback for old browsers */
     background:linear-gradient(to right, hsla(255, 92%, 10%, 0.697), hsla(300, 82%, 36%, 0.621)), url(https://cdn.glitch.global/bfabbb42-3b9a-4100-b838-8c3dc9d93851/fuente.jpg?v=1692298972367);
     background-repeat: no-repeat;
@@ -113,14 +112,14 @@ li a.active, li a:hover{
 }
 
 .fuente .fuente1{
-     background-color: #2eba2e99;
+    background-color: #2eba2e99;
     display: flex;
-    width: 60%;
-    height: 200px;
+    width: 90%;
+    height: 350px;
     justify-content: space-evenly;
     border-radius: 5px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.6);
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 .fuente1 h1{
     color: rgb(195, 255, 0);
@@ -129,13 +128,56 @@ li a.active, li a:hover{
 .fuente .fuente1 > .contenido-texto-fuente{
     width: 60%;
     color: #ffffff;
-    font-size: 1.1em;
+    font-size: 1.3em;
 }
 
 .fuente .fuente1 > .contenido-texto-fuente p{
     font-weight: 300;
     padding-top: 5px;
 }
+
+.efecto{
+    position: relative;
+    width: 50%;
+    height: 350px;
+    top: 30px;
+    left: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    background-image: url(https://cdn.glitch.global/bfabbb42-3b9a-4100-b838-8c3dc9d93851/20231122_174826.jpg?v=1701253483341);
+}
+.efecto .overlay {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:350px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: background-color .4s;
+}
+.efecto a:hover .overlay {
+    background:linear-gradient(457deg, #843939c6, #cc6e6eb7, #efb2b29f);
+    border-radius: 50px;
+}
+.efecto .overlay h2 {
+    transform: translate3d(0, -60px, 0);
+    color: transparent;
+}  
+.efecto .overlay p {
+    transform: translate3d(0, 60px, 0);   
+    color: transparent;
+    }
+.efecto a:hover .overlay-inner * {
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        transition: all .3s .3s;
+        color: rgb(255, 255, 255);
+    }
 @media screen and (max-width:900px){
     header{
         background-position: center;

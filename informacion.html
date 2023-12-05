@@ -6,67 +6,127 @@
         <link rel="stylesheet" href="informacion.css">
     </head>
     <body>
-       <section>
+        <section>
             <header>
                 <canvas class="webgl"> </canvas>
             </header>
         </section>
         <header>
             <nav>
+                <input type="checkbox" name="check" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <a href=""></a>
                 <ul>
-                    <a href="index.html">Inicio</a>
-                <a href="foto.html">Acerca de</a>
-                <a href="pagina3.html">Diseño 3D</a>
-                <a href="circulo.html">Fotografias 360</a>
-                <a href="informacion.html">informacion</a>
+                <li><a class="active" href="index.html">Inicio</a></li> 
+                <li><a href="pagina3.html">Diseño 3D</a></li>
+                <li><a href="circulo.html">fotografia 360</a></li>
+                <li><a href="informacion.html">informacion</a></li>
                 </ul>
             </nav>
 
         </header>
-        <main>
-            <article>
-                <div class="efecto">
-                    <div class="overlay">
-                        <div class="overlay-inner">
-                            <section class="clientes contenedor" id="infor">
-                                <h2 class="titulo">INFORMATE MAS DEL MUNICIPIO DE UNCIA</h2>
-                                <div class="cards">
-                                    <div class="card">
-                                        <img src="https://cdn.glitch.global/bfabbb42-3b9a-4100-b838-8c3dc9d93851/mas.jpg?v=1692298982991" alt="">
-                                        <div class="contenido-texto-card">
-                                            <h4>MASACRE DE UNCIA</h4>
-                                            <p>Esto produjo que el mayor del ejército Ayoroa diera la orden al “Batallón Técnico” de abrir 
-                                                fuego contra los manifestantes, pero en un hecho llamativo los soldados se negaron a reprimir a 
-                                                los trabajadores, lo que enfureció aun más al mayor Ayoroa, decidiendo este tomar una ametralladora y arremeter
-                                                contra los obreros asesinado a cuatro obreros e hiriendo a otros doce de los cuales tres morirían en
-                                                los días sucesivos (estos son los datos oficiales, ya que, según el relato de algunos sobrevivientes,
-                                                fueron mucho más que cuatro los cuerpos que quedaron desangrados en la plaza, y que luego desaparecieron),
-                                                este fue el comienzo de la persecución y asesinato de los obreros. En medio de la plaza poblada de muertos y 
-                                                heridos se escucha el grito de una mujer, Aurelia de Tapia Leiza, quién fue callada por los fusiles, para luego caer herida</p>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <img src="https://cdn.glitch.global/bfabbb42-3b9a-4100-b838-8c3dc9d93851/obre.jpg?v=1692298990776" alt="">
-                                        <div class="contenido-texto-card">
-                                            <h4>SECUESTRO DE LOS MINEROS OBREROS</h4>
-                                            <p>5 de junio, unos 6000 obreros de las regiones vecinas se sumaron a la huelga, que duraría hasta el día 9,
-                                                cuando, Hernando Siles, delegado del gobierno, y el sacerdote franciscano Fernando González, recomendaron a los obreros aceptar 
-                                                las propuestas para nada convenientes que ofreció el gobierno juntamente a las empresas mineras
-                                                Rivera, junto a Albarracín y Camacho, fueron puestos en un tren rumbo a la ciudad de Oruro,
-                                                pero faltando algunos kilómetros para llegar a esta ciudad fueron bajados y desviados a la ciudad de
-                                                Corque donde se cree que permanecieron encarcelados hasta fines de noviembre de 1923. Ernesto  Fernández
-                                                fue apresado y enviado a la ciudad de Puerto Acosta, donde se desconoce que es lo que sucedió con él.
-                                                Maldonado logro escapar a la Argentina,
-                                                donde siguió comprometido en la lucha obrera en las provincias de Norte Argentino.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
+                <main>
+                    <article>
+                                    <section class="clientes contenedor" id="infor">
+                                        <h2 class="titulo">INFORMATE MAS DEL MUNICIPIO DE UNCIA</h2>
+                                        <div class="cards">
+                                            <div class="box">
+                                                <div class="contenido">
+                                                    <img src="https://cdn.glitch.global/bfabbb42-3b9a-4100-b838-8c3dc9d93851/mas.jpg?v=1692298982991" alt="">
+                                                        <h4>MASACRE DE UNCIA</h4>
+                                                        <p>Esto produjo que el mayor del ejército Ayoroa diera la orden al “Batallón Técnico” de abrir 
+                                                            fuego contra los manifestantes, pero en un hecho llamativo los soldados se negaron a reprimir a 
+                                                            los trabajadores, lo que enfureció aun más al mayor Ayoroa, decidiendo este tomar una ametralladora y arremeter
+                                                            contra los obreros asesinado a cuatro obreros e hiriendo a otros doce de los cuales tres morirían en
+                                                            los días sucesivos (estos son los datos oficiales, ya que, según el relato de algunos sobrevivientes,
+                                                            fueron mucho más que cuatro los cuerpos que quedaron desangrados en la plaza, y que luego desaparecieron),
+                                                            este fue el comienzo de la persecución y asesinato de los obreros. En medio de la plaza poblada de muertos y 
+                                                            heridos se escucha el grito de una mujer, Aurelia de Tapia Leiza, quién fue callada por los fusiles, para luego caer herida</p>
+                                                    </div>
+                                                </div>
+                                            <div class="box">
+                                                <div class="contenido">
+                                                    <img src="https://cdn.glitch.global/bfabbb42-3b9a-4100-b838-8c3dc9d93851/obre.jpg?v=1692298990776" alt="">
+                                                    <h4>SECUESTRO DE LOS MINEROS OBREROS</h4>
+                                                    <p>5 de junio, unos 6000 obreros de las regiones vecinas se sumaron a la huelga, que duraría hasta el día 9,
+                                                        cuando, Hernando Siles, delegado del gobierno, y el sacerdote franciscano Fernando González, recomendaron a los obreros aceptar 
+                                                        las propuestas para nada convenientes que ofreció el gobierno juntamente a las empresas mineras
+                                                        Rivera, junto a Albarracín y Camacho, fueron puestos en un tren rumbo a la ciudad de Oruro,
+                                                        pero faltando algunos kilómetros para llegar a esta ciudad fueron bajados y desviados a la ciudad de
+                                                        Corque donde se cree que permanecieron encarcelados hasta fines de noviembre de 1923. Ernesto  Fernández
+                                                        fue apresado y enviado a la ciudad de Puerto Acosta, donde se desconoce que es lo que sucedió con él.
+                                                        Maldonado logro escapar a la Argentina,
+                                                        donde siguió comprometido en la lucha obrera en las provincias de Norte Argentino.</p>
+                                                    </div>
+                                                </div>  
+                                            </div>                              
+                                    </section>
+                    </article>
+                </main>
+                <div class="h1">
+                <div class="w1">
+                    <div class="cara frente">
+                        <img src="https://cdn.glitch.global/bfabbb42-3b9a-4100-b838-8c3dc9d93851/uncia1.png?v=1701342375129" alt="" >
+                    </div>
+                    <div class="cara espalda">
+                        <h2>ESCUDO Y BANDERA DEL MUNICIPIO DE UNCIA</h2>
+                        <p>Ley de Oredenaza Municipal Nro. 015/2013 de fecha 17/05/2013, con el que
+                            se oficializa e instituye como símbolo Municipal, el ESCUDO DEL MUNICIPIO
+                            DE UNCIA <br>
+                            Constituido por una Montera con Plumas, Casco de Minero, un Socavón. <br>
+                            En la parte baja derecha se encuentra un Libro abierto, Signo de Atletismo y un Charango, Bastón de los Doctorcitos <br>
+                            En la Parte izquierda se encuentra Cerro Antijalanta, Serina o el Pito, Espigas de Trigo,
+                            Arado, Llama, Cerro Colorado, Lago de lagunillas y los Cinco Estrellas Doradas.
+                        </p>
+                    </div>
+                </div>
+                <div class="w1">
+                    <div class="cara frente">
+                        <img src="https://cdn.glitch.global/bfabbb42-3b9a-4100-b838-8c3dc9d93851/conj.jpg?v=1701349018253" alt="0px" >
+                    </div>
+            
+                    <div class="cara espalda">
+                        <h3>MONUMENTO DE CULTURA FOLKLORE</h3>
+                        <p>Fue construido en la getsión de Ing. Hilarion Flores Choque <br>
+                        La ejecusion de la obra  fue por A.P. Zenon Lizarazu B. Uncia 2014</p>
+                    </div>
+                </div>
+            </div>
+                <div class="circles">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="casa">
+                    <div class="casa1">
+                        <div class="contenido-texto-casa">
+                            <h1>CATEDRAL DEL PATRONO SAN MIGUEL ARCANGEL</h1><br>
+                            <p>Es el Santo Patrono de los Uncieños que se encuentra en el altar mayor de la iglesia Catolica de San Miguel de Uncia<br> 
+                            Construida en 1907 de estilo Blectico no clasico dirigido por el Ing. MAx Nava y financiado por sus benefactores
+                            Simon Iturri Patiño, Gobersina Balsera, Mercedes de Poden y Fernando Gonzales.
+                        </p>
                         </div>
                     </div>
                 </div>
-            </article>
-        </main>
+                <div class="casas">
+                    <div class="casas1">
+                        <div class="contenido-texto-casa">
+                            <h1>SAN MIGUEL ARCANGEL</h1><br>
+                            <img src="https://cdn.glitch.global/bfabbb42-3b9a-4100-b838-8c3dc9d93851/Screenshot_20231130-133253_Video%20Player.jpg?v=1701365831500" alt="">
+                        </div>
+                    </div>
+                </div>
     <script>
             function cargar_paginahtml(pagina_html,seccion_div)
             {

@@ -29,7 +29,7 @@ body {
 .cards .card1{
     background-color: #2e74ba99;
     display: flex;
-    width: 50%;
+    width: 46%;
     height: 400px;
     justify-content: space-evenly;
     border-radius: 5px;
@@ -38,10 +38,10 @@ body {
 }
 .card1 h1{
     color: yellow;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 .cards .card1 > .contenido-texto-card{
-    width: 60%;
+    width: 50%;
     color: #ffffff;
     font-size: 1.1em;
 }
